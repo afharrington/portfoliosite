@@ -1,14 +1,16 @@
 import '../css/main.scss';
 
-$('#skills-link').click(function(){
-  $('.card').addClass('slideUp');
-  $('#skills').css('display', 'block').addClass('slideSectionIn');
+$('.page-link').click(function(e){
+  e.preventDefault();
+  let go = this.getAttribute('href');
+  $('.card-container').removeClass('slideDown').addClass('slideUp');
+  setTimeout(function(){
+    window.location = go;
+    $('.card-container').removeClass('slideUp');
+  }, 500);
 });
 
-$('#about-link').click(function(){
-  $('#about').css('display', 'block');
-});
-
-$('#projects-link').click(function(){
-  $('#projects').css('display', 'block');
+$('.nav-arrow').click(function(e){
+  let go = this.getAttribute('href');
+  $('.card-container').addClass('slideDown');
 });

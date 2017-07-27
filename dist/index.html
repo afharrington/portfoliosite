@@ -6,38 +6,96 @@
     <script src="https://use.fontawesome.com/332bc1d84f.js"></script>
   </head>
   <body>
-    <div class="card slideDown">
-      <div class="card-content">
-        <div class="summary">
-          <h1>Hi, I'm Anna</h1>
-          <p>I am a web developer based in New York City.</p>
-          <p>I enjoy combining my love of coding and my background in consumer research to create fun and intuitive user experiences.</p>
+    <div id="main" class="page">
+      <div class="card-container slideDown">
+        <div class="card-left">
+          <div class="card-left-summary">
+            <h1 className="greeting">Hello!</br>I'm Anna</h1>
+            <p>I'm a front end developer based in New York City.</p>
+            <p>I combine my love of coding and my background in consumer research to create fun and intuitive user experiences.</p>
+          </div>
+          <div class="nav-links-container">
+            <a href="#skills" class="page-link"><li>Skills</li></a>
+            <a href="#about" class="page-link"><li>About</li></a>
+            <a href="#projects" class="page-link"><li>Projects</li></a>
+          </div>
         </div>
-        <div class="nav-links">
-          <li id="skills-link">Skills</li>
-          <li id="about-link">About</li>
-          <li id="projects-link">Projects</li>
+        <div class="card-right">
+          <img src="/img/Anna.jpeg"/>
+          <div class="social-links">
+            <ul>
+              <li><a href="mailto:hi@afharrington.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+              <li><a href="https://github.com/afharrington"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/afkharrington/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="photo">
-        <img src="/img/Anna.jpeg"/>
-        <div class="social-links">
+    </div>
+    <div id="skills" class="page">
+      <div class="arrow-container">
+        <a href="#" class="nav-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+      </div>
+      <h1>Skills</h1>
+      <div class="skills-container">
+        <div class="box tech">
+          <h3>I create web applications with:</h3>
+          <div class="list-left">
+            <ul>
+              <li>JavaScript (ES6)</li>
+              <li>CSS3 (SASS)</li>
+              <li>jQuery</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="list-right">
+            <ul>
+              <li>React</li>
+              <li>Redux</li>
+              <li>Node</li>
+              <li>Express</li>
+            </ul>
+          </div>
+        </div>
+        <div class="box tools">
+          <h3>And work with tools like:</h3>
+            <ul>
+              <li>Atom</li>
+              <li>Git</li>
+              <li>Webpack</li>
+              <li>Postman</li>
+              <li>Heroku</li>
+            </ul>
+        </div>
+        <div class="box care">
+          <h3>When building, I think about:</h3>
           <ul>
-            <li><a href="mailto:hi@afharrington.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/afharrington"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/afkharrington/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            <li>Responsive design</li>
+            <li>Cross-browser compatibility</li>
+            <li>Information architecture</li>
+            <li>Maintainability</li>
+            <li>Security</li>
+          </ul>
+        </div>
+        <div class="box learn">
+          <h3>I'm always learning! Next up:</h3>
+          <ul>
+            <li>React Native</li>
+            <li>D3</li>
+            <li>GraphQL</li>
           </ul>
         </div>
       </div>
     </div>
-    <div id="skills">
-      <div>JavaScript, HTML5, CSS3, React, Redux, Node.js, MongoDB</div>
+    <div id="about" class="page">
+      <a href="#" class="nav-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+      <div className="about-container">
+      </div>
     </div>
-    <div id="about">
-      ABOUT
-    </div>
-    <div id="projects">
-      PROJECTS
+    <div id="projects" class="page">
+      <a href="#" class="nav-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+      <div className="projects-container">
+      </div>
     </div>
     <script src="bundle.js"></script>
   </body>

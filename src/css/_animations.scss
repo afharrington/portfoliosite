@@ -30,20 +30,3 @@
 		transform: translateY(-150%);
 	}
 }
-
-.slideSectionIn {
-  animation-name: slideSectionIn;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  visibility: visible !important;
-  animation-fill-mode: forwards;
-}
-
-@keyframes slideSectionIn {
-  0% {
-		transform: translateY(0%);
-	}
-	100% {
-		transform: translateY(-80%);
-	}
-}
