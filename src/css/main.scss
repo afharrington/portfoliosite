@@ -1,5 +1,6 @@
 @import './animations.scss';
 @import './fonts.scss';
+@import './colors.scss';
 @import './components/card.scss';
 @import './components/skills.scss';
 @import './components/about.scss';
@@ -8,17 +9,13 @@
 body {
   margin-top: 0px;
   font-family: 'Questrial', sans-serif;
-  color: #212121;
-}
-
-html {
-  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-  background: -webkit-linear-gradient(#fdfcfb, #e2d1c3)
+  color: $main-text;
 }
 
 .page {
   height: 1500px;
   width: 100%;
+  background: #424242;
 }
 
 @media screen and (max-width: 500px) {
@@ -35,6 +32,7 @@ html {
   text-align: center;
   width: 100%;
   margin-bottom: 25px;
+  color: white;
 }
 
 h1 {
@@ -48,7 +46,7 @@ p {
 }
 
 .nav-arrow {
-  color: #212121;
+  color: white;
   font-size: 56px;
   cursor: pointer;
   margin-bottom: 25px;
@@ -59,11 +57,11 @@ a {
 }
 
 a:visited {
-  color: #33691E;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #8BC34A;
+  color: $accent;
 }
 
 li {

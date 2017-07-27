@@ -2,6 +2,11 @@
   width: 100%;
   height: 500px;
   text-align: center;
+  color: white;
+}
+
+a {
+  color: #FFC107;
 }
 
 h2 {
@@ -40,15 +45,10 @@ h2 {
   p {
     margin-bottom: 25px;
   }
-  a {
-    text-decoration: none;
-  }
-  a:hover {
-    color: #8BC34A;
-  }
+
 }
 
-.favorites {
+#favorites {
   margin-top: 50px;
 }
 
