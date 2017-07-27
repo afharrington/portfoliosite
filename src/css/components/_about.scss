@@ -1,0 +1,58 @@
+.about-container {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 10px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+.attributes {
+  text-align: left;
+  width: 50%;
+  margin-left: 100px;
+}
+
+.iam {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: right;
+}
+
+.att {
+  display: none;
+}
+
+.background {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: left;
+  p {
+    margin-bottom: 25px;
+  }
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    color: #8BC34A;
+  }
+}
+
+.favorites {
+  margin-top: 50px;
+}
+
+.favorites-links {
+  li {
+    margin-bottom: 10px;
+  }
+}

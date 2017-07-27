@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Anna Harrington | Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <script src="https://use.fontawesome.com/332bc1d84f.js"></script>
   </head>
@@ -11,7 +12,7 @@
         <div class="card-left">
           <div class="card-left-summary">
             <h1 className="greeting">Hello!</br>I'm Anna</h1>
-            <p>I'm a front end developer based in New York City.</p>
+            <p>I'm a full stack developer based in New York City.</p>
             <p>I combine my love of coding and my background in consumer research to create fun and intuitive user experiences.</p>
           </div>
           <div class="nav-links-container">
@@ -21,7 +22,7 @@
           </div>
         </div>
         <div class="card-right">
-          <img src="/img/Anna.jpeg"/>
+          <img class="myphoto" src="/img/Anna.jpeg"/>
           <div class="social-links">
             <ul>
               <li><a href="mailto:hi@afharrington.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
@@ -33,10 +34,10 @@
       </div>
     </div>
     <div id="skills" class="page">
-      <div class="arrow-container">
+      <div class="page-heading">
         <a href="#" class="nav-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+        <h1>Skills</h1>
       </div>
-      <h1>Skills</h1>
       <div class="skills-container">
         <div class="box tech">
           <h3>I create web applications with:</h3>
@@ -88,13 +89,69 @@
       </div>
     </div>
     <div id="about" class="page">
-      <a href="#" class="nav-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-      <div className="about-container">
+      <div class="page-heading">
+        <a href="#" class="nav-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+        <h1>About</h1>
+      </div>
+      <div class="about-container">
+        <div class="intro">
+          <div class="iam">
+            <h2>I enjoy work that is . . .</h2>
+          </div>
+          <div class="attributes">
+            <h2 class="att" id="technical">Technical</h2>
+            <h2 class="att" id="creative">Creative</h2>
+            <h2 class="att" id="strategic">Strategic</h2>
+            <h2 class="att" id="teamoriented">Team-Oriented</h2>
+          </div>
+        </div>
+        <div class="background">
+          <p>I have been coding for one year, self-teaching with a wide variety of books, online courses, and learning platforms.*</p>
+          <p>To accelerate my learning, I recently attended the <a href="https://www.recurse.com/" target="_blank">Recurse Center</a>, a three-month self-directed retreat in New York City which brings programmers together for collaboration, pair programming, technical talks, and social events.</p>
+          <p>I came to web development from a career in market research consulting, which included the UX research that initially sparked my interest in code. From my past work, I bring with me extensive experience in project management and team collaboration, an eye for usability, and a sensitivity toward broader business objectives.</p>
+          <p class="favorites">* Some of my favorites have been:<p>
+          <ul class="favorites-links">
+            <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x"><li>Introduction to Computer Science (CS50x)</li></a>
+            <a href="https://github.com/getify/You-Dont-Know-JS" target="_blank"><li>"You Don't Know JS"</li></a>
+            <a href="https://www.codeschool.com/learn/javascript" target="_blank"><li>Code School's "JavaScript Road Trip"</li></a>
+            <a href="https://www.udemy.com/react-redux/" target="_blank"><li>Stephen Grider's "Modern React with Redux"</li></a>
+            <a href="https://inventwithpython.com/pygame/chapters/" target="_blank"><li>"Making Games with Python and Pygame"</li></a>
+          <ul>
+        </div>
       </div>
     </div>
     <div id="projects" class="page">
-      <a href="#" class="nav-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
-      <div className="projects-container">
+      <div class="page-heading">
+        <a href="#" class="nav-arrow"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+        <h1>Projects</h1>
+      </div>
+      <div class="projects-container">
+        <div class="timetiles">
+          <h3>TimeTiles</h3>
+          <div class="project-details">
+            <div class="project-images">
+              <img class="screenshot" src="/img/timetiles-1.png"/>
+              <img class="screenshot" src="/img/timetiles-2.png"/>
+              <p><a class="gh-link" href="https://timetiles.herokuapp.com" target="_blank">Try it</a></br>Email: test@email.com</br>Password: tiles</p>
+              <p><a class="gh-link" href="https://github.com/afharrington/tracker"><i class="fa fa-github" aria-hidden="true"></i></a>Front End</p>
+              <p><a class="gh-link" href="https://github.com/afharrington/trackerapi"><i class="fa fa-github" aria-hidden="true"></i></a>API</p>
+            </div>
+            <div class="project-description">
+              <p class="techstack">JavaScript, React, Redux, Node, MongoDB</p>
+              <p>When I switched to learning full-time, I found myself juggling lists haphazardly, once I realized that the "use it or lose it" nature of learning meant a linear to-do list wouldn't be effective.</p>
+              <p>I created TimeTiles as a way to log your activities and time spent toward different goals, and then view at a glance what you've been up to. Tiles lighten or darken in color according to how recently you've worked toward a goal and the total time you've spent.</p>
+              <p class="learned">Through this project, I learned about:</p>
+              <ul>
+                <li>Managing app state with Redux</li>
+                <li>Creating a RESTful API with Node and Express</li>
+                <li>Client-side routing with React Router v4</li>
+                <li>Server-side authenticaion with JSON Web Tokens (JWT), Passport, and bcrypt</li>
+                <li>Writing maintainable CSS with SCSS partials and component-based stylesheets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="staytuned">Stay tuned! I'll be adding more projects soon.</div>
       </div>
     </div>
     <script src="bundle.js"></script>
