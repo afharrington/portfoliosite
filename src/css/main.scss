@@ -10,17 +10,17 @@ body {
   margin-top: 0px;
   font-family: 'Questrial', sans-serif;
   color: $main-text;
+  background: #424242;
 }
 
 .page {
   height: 1500px;
   width: 100%;
-  background: #424242;
 }
 
 @media screen and (max-width: 500px) {
   .page {
-    height: 1250px;
+    height: 1500px;
   }
 
   #projects {
