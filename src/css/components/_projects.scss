@@ -49,3 +49,15 @@
   display: block;
   margin-top: 100px;
 }
+
+@media screen and (max-width: 500px) {
+  .project-images {
+    text-align: center;
+  }
+  .techstack {
+    margin-bottom: 50px;
+  }
+  .staytuned {
+    margin-top: 700px;
+  }
+}

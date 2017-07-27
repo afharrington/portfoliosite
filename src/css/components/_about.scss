@@ -35,6 +35,7 @@ h2 {
 .background {
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 40px;
   text-align: left;
   p {
     margin-bottom: 25px;
@@ -54,5 +55,26 @@ h2 {
 .favorites-links {
   li {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro {
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .iam {
+    text-align: left;
+    width: 75%;
+  }
+  .attributes {
+    text-align: left;
+    width: 100%;
+  }
+  .background {
+    margin-top: 50px;
+
   }
 }
