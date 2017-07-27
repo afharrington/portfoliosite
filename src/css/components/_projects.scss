@@ -43,11 +43,12 @@
 .project-description {
   width: 400px;
   margin-left: 5px;
+  display: block;
 }
 
 .staytuned {
   display: block;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 500px) {
@@ -56,8 +57,5 @@
   }
   .techstack {
     margin-bottom: 50px;
-  }
-  .staytuned {
-    margin-top: 700px;
   }
 }
