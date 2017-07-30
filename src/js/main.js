@@ -1,12 +1,9 @@
-import '../css/main.scss';
+import '../stylesheets/main.scss';
 import './jquery.inview.min.js';
 
 $('.page-link').click(function(e){
   e.preventDefault();
   let go = this.getAttribute('href');
-
-  // if go == #about cause delay and then trigger about action
-
   $('.card-container').removeClass('slideDown').addClass('slideUp');
   setTimeout(function(){
     window.location = go;

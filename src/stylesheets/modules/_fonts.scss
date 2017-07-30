@@ -1,0 +1,24 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+// Lato
+
+// Font Variables
+$body-font: 'Lato', sans-serif;
+$header-font: 'Questrial', sans-serif;
+
+// Common Styles
+body {
+  font-family: $body-font;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 42px;
+  font-family: $header-font;
+  font-weight: normal;
+}
+
+p {
+  font-size: 18px;
+}

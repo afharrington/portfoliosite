@@ -1,14 +1,23 @@
-.projects-container {
-  text-align: center;
-  color: white;
+#projects {
+   height: 1000px;
 }
 
-.timetiles {
+.projects-container {
+  text-align: center;
+  color: $text-dark;
+
+  a {
+    color: #4DD0E1;;
+    text-decoration: none;
+  }
+}
+
+.project {
   margin-bottom: 50px;
 }
 
 .project-heading {
-  color: white;
+  color: #4DD0E1;
   font-size: 36px;
 }
 
@@ -44,18 +53,20 @@
 }
 
 .heading {
-  color: #00BCD4;
+  color: #4DD0E1;
   font-size: 24px;
 }
 
 .techstack {
   font-weight: bold;
   margin-bottom: 25px;
+  color: $text-dark;
 }
 
 .learned {
   margin-top: 50px;
   font-weight: bold;
+  color: $text-dark;
 }
 
 .project-description {
@@ -73,7 +84,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .project-images {
     text-align: center;
   }

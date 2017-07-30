@@ -9908,14 +9908,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 __webpack_require__(3);
 
-__webpack_require__(8);
+__webpack_require__(7);
 
 $('.page-link').click(function (e) {
   e.preventDefault();
   var go = this.getAttribute('href');
-
-  // if go == #about cause delay and then trigger about action
-
   $('.card-container').removeClass('slideDown').addClass('slideUp');
   setTimeout(function () {
     window.location = go;
@@ -9987,7 +9984,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(6)(content, options);
+var update = __webpack_require__(5)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -10005,104 +10002,12 @@ if(false) {
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__(5)(undefined);
-// imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
-exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Material+Icons);", ""]);
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Questrial);", ""]);
-
-// module
-exports.push([module.i, ".slideDown {\n  animation-name: slideDown;\n  animation-duration: 1s;\n  animation-timing-function: ease;\n  visibility: visible !important; }\n\n@keyframes slideDown {\n  0% {\n    transform: translateY(-100%); }\n  100% {\n    transform: translateY(0%); } }\n\n.slideUp {\n  animation-name: slideUp;\n  animation-duration: 1s;\n  animation-timing-function: ease;\n  visibility: visible !important;\n  animation-fill-mode: forwards; }\n\n@keyframes slideUp {\n  0% {\n    transform: translateY(0%); }\n  100% {\n    transform: translateY(-150%); } }\n\n#main {\n  padding-top: 50px; }\n\n.card-container {\n  margin: 0 auto;\n  width: 600px;\n  height: 350px;\n  background-color: white;\n  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }\n\n.card-left {\n  float: left;\n  background-color: white;\n  width: 330px;\n  height: 100%; }\n\n.card-left-summary {\n  margin: 25px 25px 8px 25px; }\n  .card-left-summary p {\n    margin-bottom: 0px; }\n\n.greeting {\n  margin-bottom: 15px; }\n\n.nav-links-container {\n  width: 100%;\n  height: 70px;\n  text-align: center;\n  cursor: pointer; }\n  .nav-links-container li {\n    display: inline-block;\n    margin: 8px;\n    padding: 10px;\n    text-transform: uppercase;\n    font-size: 14px;\n    font-weight: bold;\n    text-decoration: none;\n    color: black;\n    border-top: 2px solid white;\n    border-bottom: 2px solid white; }\n  .nav-links-container li:hover {\n    color: #00BCD4;\n    border-top: 2px solid #00BCD4;\n    border-bottom: 2px solid #00BCD4; }\n\n.card-right {\n  display: inline-block;\n  position: relative;\n  text-align: center;\n  width: 270px;\n  height: 100%;\n  background-color: #00BCD4; }\n  .card-right .myphoto {\n    margin-top: 0px;\n    width: 270px; }\n  .card-right a {\n    text-decoration: none;\n    color: white; }\n  .card-right a:visited {\n    color: white; }\n  .card-right a[href^=\"mailto\"] {\n    color: white; }\n  .card-right a:hover {\n    color: #FFC107; }\n\n.social-links ul {\n  padding-left: 0px;\n  text-align: center; }\n  .social-links ul li {\n    display: inline-block;\n    margin-left: 20px;\n    margin-right: 20px; }\n    .social-links ul li i {\n      font-size: 32px; }\n\n@media screen and (max-width: 500px) {\n  .card-container {\n    width: 360px; }\n  .card-right {\n    width: 360px;\n    height: 380px;\n    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }\n  .myphoto {\n    width: 250px;\n    margin-top: 25px !important; } }\n\n#skills {\n  text-align: center; }\n\n.skills-container {\n  margin-top: 25px;\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center; }\n\n.box {\n  background-color: white;\n  color: #00BCD4;\n  min-width: 350px;\n  height: 200px;\n  margin: 15px;\n  border: 4px solid #00BCD4; }\n  .box h3 {\n    color: #00BCD4;\n    font-size: 22px; }\n  .box ul {\n    text-align: left; }\n  .box .list-left {\n    margin-top: -12px;\n    width: 50%;\n    float: left; }\n  .box .list-right {\n    margin-top: -13px;\n    width: 50%;\n    float: right;\n    padding-left: 0px; }\n  .box li {\n    margin-bottom: 10px;\n    color: #424242; }\n\n.about-container {\n  width: 100%;\n  height: 500px;\n  text-align: center;\n  color: white; }\n\na {\n  color: #FFC107; }\n\nh2 {\n  font-size: 28px;\n  margin: 10px; }\n\n.intro {\n  display: flex;\n  justify-content: center;\n  height: 200px; }\n\n.attributes {\n  text-align: left;\n  width: 50%;\n  margin-left: 100px; }\n\n.iam {\n  display: inline-block;\n  width: 50%;\n  vertical-align: top;\n  text-align: right; }\n\n.att {\n  display: none; }\n\n.background {\n  margin-left: 50px;\n  margin-right: 50px;\n  margin-top: 40px;\n  text-align: left; }\n  .background p {\n    margin-bottom: 25px;\n    line-height: 150%; }\n\n#favorites {\n  margin-top: 50px; }\n\n.favorites-links li {\n  margin-bottom: 10px; }\n\n@media screen and (max-width: 500px) {\n  .intro {\n    flex-wrap: wrap; }\n  h2 {\n    font-size: 20px; }\n  .iam {\n    text-align: left;\n    width: 75%; }\n  .attributes {\n    text-align: left;\n    width: 100%; }\n  .background {\n    margin-top: 50px;\n    width: 95%;\n    margin-left: 10px; } }\n\n.projects-container {\n  text-align: center;\n  color: white; }\n\n.timetiles {\n  margin-bottom: 50px; }\n\n.project-heading {\n  color: white;\n  font-size: 36px; }\n\n.screenshot {\n  width: 300px;\n  margin: 5px; }\n\n.project-details {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center;\n  width: 100%;\n  height: 600px;\n  text-align: left; }\n  .project-details p {\n    line-height: 175%;\n    margin-left: 0px; }\n  .project-details li {\n    line-height: 125%; }\n\n.project-images {\n  width: 400px;\n  margin-right: 5px; }\n\n.gh-link {\n  font-size: 24px;\n  margin-right: 10px; }\n\n.heading {\n  color: #00BCD4;\n  font-size: 24px; }\n\n.techstack {\n  font-weight: bold;\n  margin-bottom: 25px; }\n\n.learned {\n  margin-top: 50px;\n  font-weight: bold; }\n\n.project-description {\n  width: 400px;\n  margin-left: 5px;\n  display: block; }\n\n.staytuned {\n  display: block;\n  margin-top: 50px; }\n  .staytuned p {\n    font-size: 32px;\n    line-height: normal; }\n\n@media screen and (max-width: 500px) {\n  .project-images {\n    text-align: center; }\n  .techstack {\n    margin-bottom: 50px; } }\n\nbody {\n  margin-top: 0px;\n  font-family: 'Questrial', sans-serif;\n  color: #424242;\n  background: #424242; }\n\n.page {\n  height: 1500px;\n  width: 100%; }\n\n@media screen and (max-width: 500px) {\n  .page {\n    height: 1500px; }\n  #projects {\n    height: 1700px; } }\n\n.page-heading {\n  text-align: center;\n  width: 100%;\n  margin-bottom: 25px;\n  color: white; }\n\nh1 {\n  font-size: 42px;\n  margin: 15px; }\n\np {\n  font-size: 18px;\n  margin: 15px; }\n\n.nav-arrow {\n  color: white;\n  font-size: 56px;\n  cursor: pointer;\n  margin-bottom: 25px; }\n\na {\n  text-decoration: none; }\n\na:visited {\n  text-decoration: none; }\n\na:hover {\n  color: #00BCD4; }\n\nli {\n  margin-bottom: 10px; }\n", ""]);
-
-// exports
-
+throw new Error("Module build failed: \n    color: $main-text;\n          ^\n      Undefined variable: \"$main-text\".\n      in /Users/annaharrington/Desktop/Projects/Portfolio/src/stylesheets/partials/_skills.scss (line 40, column 12)");
 
 /***/ }),
 /* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function (useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if (item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function (modules, mediaQuery) {
-		if (typeof modules === "string") modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for (var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if (typeof id === "number") alreadyImportedModules[id] = true;
-		}
-		for (i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if (typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if (mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if (mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
-/***/ }),
-/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -10148,7 +10053,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(7);
+var	fixUrls = __webpack_require__(6);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -10461,7 +10366,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10556,7 +10461,7 @@ module.exports = function (css) {
 };
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

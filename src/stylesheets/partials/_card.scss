@@ -1,33 +1,35 @@
-@import './fonts.scss';
-
 #main {
   padding-top: 50px;
+  height: 600px;
 }
 
 .card-container {
   margin: 0 auto;
   width: 600px;
   height: 350px;
-  background-color: white;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .card-left {
   float: left;
-  background-color: white;
   width: 330px;
   height: 100%;
+  background-color: $background-dark;
+  color: $text-light;
 }
 
 .card-left-summary {
   margin: 25px 25px 8px 25px;
-  p {
-    margin-bottom: 0px;
-  }
-}
 
-.greeting {
-  margin-bottom: 15px;
+  h1 {
+    font-family: 'Questrial', sans-serif !important;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
 
 .nav-links-container {
@@ -44,9 +46,9 @@
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-    color: black;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    color: $text-light;
+    border-top: 2px solid $text-light;
+    border-bottom: 2px solid $text-light;
   }
 
   li:hover {
@@ -70,16 +72,10 @@
   }
   a {
     text-decoration: none;
-    color: white;
-  }
-  a:visited {
-    color: white;
-  }
-  a[href^="mailto"] {
-    color: white;
+    color: $text-light;
   }
   a:hover {
-    color: #FFC107;
+    color: $hover-dark;
   }
 }
 
@@ -98,16 +94,17 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .card-container {
+@media screen and (max-width: 800px) {
+  #main {
+    height: 1000px;
+  }
+  .card-left, .card-container, .card-right {
     width: 360px;
   }
   .card-right {
-    width: 360px;
     height: 380px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
-
   .myphoto {
     width: 250px;
     margin-top: 25px !important;

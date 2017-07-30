@@ -1,0 +1,25 @@
+// Color Variables
+$dark-gray: #424242;
+$blue: #0099BC;
+$gray-brown: #4C4A48;
+$gray: #424242;
+$yellow: #FFC107;
+$offwhite: #f4f2ed;
+$green: #91AD5D;
+$red: #AA3939;
+$dark-purple: #080033;
+$teal-green: #005653;
+
+// Color Assignments
+$background-dark: $dark-gray;
+$background-light: white;
+$text-dark: $dark-gray;
+$text-light: white;
+$accent: $green;
+$hover-dark: $gray-brown;
+
+// Common Styles
+body {
+  color: $text-dark;
+  background: $background-light;
+}
