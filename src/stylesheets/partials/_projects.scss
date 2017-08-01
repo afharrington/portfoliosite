@@ -17,7 +17,7 @@
 }
 
 .project-heading {
-  color: #4DD0E1;
+  color: $accent;
   font-size: 36px;
 }
 
@@ -52,6 +52,10 @@
   margin-right: 10px;
 }
 
+.project-links a:hover {
+  color: $light-teal;
+}
+
 .heading {
   color: #4DD0E1;
   font-size: 24px;
@@ -81,6 +85,12 @@
   p {
     font-size: 32px;
     line-height: normal;
+  }
+  a {
+    color: $light-teal;
+  }
+  a:visited {
+    color: $light-teal;
   }
 }
 

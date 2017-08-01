@@ -52,9 +52,9 @@
   }
 
   li:hover {
-    color: $accent;
-    border-top: 2px solid $accent;
-    border-bottom: 2px solid $accent;
+    color: $hover-light;
+    border-top: 2px solid $hover-light;
+    border-bottom: 2px solid $hover-light;
   }
 }
 
@@ -64,35 +64,37 @@
   text-align: center;
   width: 270px;
   height: 100%;
-  background-color: $accent;
+  background-color: $teal-green;
+}
 
-  .myphoto {
-    margin-top: 0px;
-    width: 270px;
-  }
-  a {
-    text-decoration: none;
-    color: $text-light;
-  }
-  a:hover {
-    color: $hover-dark;
-  }
+.myphoto {
+  margin-top: 0px;
+  width: 270px;
+  background-color: white;
 }
 
 .social-links {
   ul {
     padding-left: 0px;
     text-align: center;
-    li {
+  }
+
+  li {
       display: inline-block;
       margin-left: 20px;
       margin-right: 20px;
-      i {
-        font-size: 32px;
-      }
-    }
+  }
+
+  i {
+    color: white;
+    font-size: 32px;
+  }
+
+  i:hover {
+    color: $hover-light;
   }
 }
+
 
 @media screen and (max-width: 800px) {
   #main {

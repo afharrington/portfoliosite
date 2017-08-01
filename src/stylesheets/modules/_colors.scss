@@ -9,14 +9,17 @@ $green: #91AD5D;
 $red: #AA3939;
 $dark-purple: #080033;
 $teal-green: #005653;
+$light-teal: #80CBC4;
+$light-gray: #BDBDBD;
 
 // Color Assignments
 $background-dark: $dark-gray;
 $background-light: white;
 $text-dark: $dark-gray;
 $text-light: white;
-$accent: $green;
-$hover-dark: $gray-brown;
+$accent: $teal-green;
+$hover-light: $light-teal;
+
 
 // Common Styles
 body {

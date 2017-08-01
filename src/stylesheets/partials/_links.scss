@@ -4,8 +4,15 @@ a {
 
 a:visited {
   text-decoration: none;
+  color: $dark-gray;
 }
 
-a:hover {
-  color: $pink;
+.page-nav li {
+  display: inline-block;
+  margin: 15px;
+}
+
+.page-nav a:hover {
+  color: $teal-green;
+  font-weight: bold;
 }
