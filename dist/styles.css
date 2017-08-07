@@ -35,10 +35,6 @@ h1 {
 p {
   font-size: 18px; }
 
-body {
-  color: #424242;
-  background: white; }
-
 #main {
   padding-top: 50px;
   height: 600px; }
@@ -50,28 +46,27 @@ body {
   height: 350px;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
-.card-left {
+.card-intro {
   float: left;
   width: 330px;
   height: 100%;
   background-color: #424242;
   color: white; }
 
-.card-left-summary {
+.card-intro-summary {
   margin: 25px 25px 8px 25px; }
-  .card-left-summary h1 {
+  .card-intro-summary h1 {
     font-family: 'Questrial', sans-serif !important;
     margin-bottom: 10px; }
-  .card-left-summary p {
+  .card-intro-summary p {
     margin-top: 0px;
     margin-bottom: 10px; }
 
 .nav-links-container {
   width: 100%;
   height: 70px;
-  text-align: center;
-  cursor: pointer; }
-  .nav-links-container li {
+  text-align: center; }
+  .nav-links-container a {
     display: inline-block;
     margin: 8px;
     padding: 10px;
@@ -81,13 +76,14 @@ body {
     text-decoration: none;
     color: white;
     border-top: 2px solid white;
-    border-bottom: 2px solid white; }
-  .nav-links-container li:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer; }
+  .nav-links-container a:hover, .nav-links-container a:focus {
     color: #80CBC4;
     border-top: 2px solid #80CBC4;
     border-bottom: 2px solid #80CBC4; }
 
-.card-right {
+.card-photo {
   display: inline-block;
   position: absolute;
   text-align: center;
@@ -100,70 +96,65 @@ body {
   width: 270px;
   background-color: white; }
 
-.social-links ul {
+.social-links {
   padding-left: 0px;
+  padding-top: 15px;
   text-align: center; }
-
-.social-links li {
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px; }
-
-.social-links i {
-  color: white;
-  font-size: 32px; }
-
-.social-links i:hover {
-  color: #80CBC4; }
+  .social-links a {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: 32px; }
+  .social-links a:hover {
+    color: #80CBC4; }
 
 @media screen and (max-width: 650px) {
+  #main {
+    padding-top: 0px; }
   .card-container {
-    height: 100%;
     width: 100%;
+    height: 100vh;
     box-shadow: none;
     position: relative; }
-  .card-left {
+  .card-intro {
     position: absolute;
     width: 90%;
     margin-left: 5%;
+    margin-top: 10%;
     background-color: white;
     color: #424242; }
-  .card-right {
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    height: 50px;
-    left: 0%;
-    bottom: 10%; }
-    .card-right img {
-      display: none; }
-    .card-right .social-links {
-      width: 100%; }
-      .card-right .social-links ul {
-        padding-left: 0px;
-        text-align: center; }
-      .card-right .social-links li {
-        display: inline-block;
-        margin-left: 20px;
-        margin-right: 20px; }
-      .card-right .social-links i {
-        color: black;
-        font-size: 32px; }
-      .card-right .social-links i:hover {
-        color: #80CBC4; }
+  .card-intro-summary p {
+    font-size: 24px; }
   .nav-links-container {
     margin-top: 50px;
-    width: 100%; }
-    .nav-links-container li {
+    width: 100%;
+    position: relative; }
+    .nav-links-container a {
       color: white;
-      display: block;
+      display: inline-block;
       background-color: #80CBC4;
       border: none;
       width: 80%;
-      margin-left: 5%; }
-    .nav-links-container li:hover {
+      margin-left: 5%;
+      font-size: 18px; }
+    .nav-links-container a:hover {
       background-color: #005653;
-      border: none; } }
+      border: none; }
+  .card-photo {
+    background-color: white;
+    width: 100%;
+    height: 50px; }
+    .card-photo img {
+      display: none; }
+  .social-links {
+    text-align: right; }
+    .social-links a {
+      color: #424242;
+      font-size: 32px;
+      margin-left: 0px; }
+    .social-links a:hover {
+      color: #80CBC4; } }
 
 #skills {
   text-align: center; }
@@ -353,16 +344,13 @@ h2 {
   cursor: pointer;
   margin-bottom: 25px; }
 
-a {
-  text-decoration: none; }
-
-a:visited {
-  text-decoration: none;
-  color: #424242; }
-
-.page-nav li {
+.page-nav a, .page-nav p {
   display: inline-block;
-  margin: 15px; }
+  margin: 10px;
+  color: #424242;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none; }
 
 .page-nav a:hover {
   color: #005653;

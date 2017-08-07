@@ -12,7 +12,7 @@
 }
 
 // Intro & Nav Links
-.card-left {
+.card-intro {
   float: left;
   width: 330px;
   height: 100%;
@@ -20,7 +20,7 @@
   color: $text-light;
 }
 
-.card-left-summary {
+.card-intro-summary {
   margin: 25px 25px 8px 25px;
 
   h1 {
@@ -38,9 +38,8 @@
   width: 100%;
   height: 70px;
   text-align: center;
-  cursor: pointer;
 
-  li {
+  a {
     display: inline-block;
     margin: 8px;
     padding: 10px;
@@ -48,12 +47,13 @@
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
-    color: $text-light;
+    color: white;
     border-top: 2px solid $text-light;
     border-bottom: 2px solid $text-light;
+    cursor: pointer;
   }
 
-  li:hover {
+  a:hover, a:focus {
     color: $hover-light;
     border-top: 2px solid $hover-light;
     border-bottom: 2px solid $hover-light;
@@ -61,7 +61,7 @@
 }
 
 // Photo & Social Links
-.card-right {
+.card-photo {
   display: inline-block;
   position: absolute;
   text-align: center;
@@ -77,98 +77,91 @@
 }
 
 .social-links {
-  ul {
-    padding-left: 0px;
-    text-align: center;
-  }
+  padding-left: 0px;
+  padding-top: 15px;
+  text-align: center;
 
-  li {
+  a {
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
-  }
-
-  i {
     color: white;
     font-size: 32px;
   }
-
-  i:hover {
+  a:hover {
     color: $hover-light;
   }
 }
 
 
 @media screen and (max-width: 650px) {
+  #main {
+    padding-top: 0px;
+  }
+
   .card-container {
-    height: 100%;
     width: 100%;
+    height: 100vh;
     box-shadow: none;
     position: relative;
   }
 
   // Intro & Nav Links
-  .card-left {
+  .card-intro {
     position: absolute;
     width: 90%;
     margin-left: 5%;
+    margin-top: 10%;
     background-color: white;
     color: $dark-gray;
   }
 
-  // Photo & Social Links
-  .card-right {
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    height: 50px;
-    left: 0%;
-    bottom: 10%;
-
-    img {
-      display: none;
-    }
-
-    .social-links {
-      width: 100%;
-      ul {
-        padding-left: 0px;
-        text-align: center;
-      }
-
-      li {
-        display: inline-block;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-
-      i {
-        color: black;
-        font-size: 32px;
-      }
-
-      i:hover {
-        color: $hover-light;
-      }
-    }
+  .card-intro-summary p {
+    font-size: 24px;
   }
 
   .nav-links-container {
     margin-top: 50px;
     width: 100%;
+    position: relative;
 
-    li {
+    a {
       color: white;
-      display: block;
+      display: inline-block;
       background-color: $hover-light;
       border: none;
       width: 80%;
       margin-left: 5%;
+      font-size: 18px;
     }
 
-    li:hover {
+    a:hover {
       background-color: $teal-green;
       border: none;
+    }
+  }
+
+  // Photo & Social Links
+  .card-photo {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+
+    img {
+      display: none;
+    }
+  }
+
+  .social-links {
+    text-align: right;
+    a {
+      color: $dark-gray;
+      font-size: 32px;
+      margin-left: 0px;
+    }
+
+    a:hover {
+      color: $hover-light;
     }
   }
 }
