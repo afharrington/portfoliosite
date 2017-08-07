@@ -1,7 +1,3 @@
-#projects {
-   height: 1000px;
-}
-
 .projects-container {
   text-align: center;
   color: $text-dark;
@@ -77,13 +73,16 @@
   width: 400px;
   margin-left: 5px;
   display: block;
+  p {
+    font-size: 20px;
+  }
 }
 
 .staytuned {
   display: block;
   margin-top: 50px;
   p {
-    font-size: 32px;
+    font-size: 24px;
     line-height: normal;
   }
   a {
