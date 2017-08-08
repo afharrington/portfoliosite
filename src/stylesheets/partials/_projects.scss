@@ -1,15 +1,18 @@
+#projects {
+  height: auto;
+}
+
 .projects-container {
   text-align: center;
   color: $text-dark;
-
-  a {
-    color: #4DD0E1;;
-    text-decoration: none;
-  }
 }
 
 .project {
+  width: 100%;
+  height: auto;
   margin-bottom: 50px;
+  overflow: auto;
+  text-align: center;
 }
 
 .project-heading {
@@ -17,17 +20,11 @@
   font-size: 36px;
 }
 
-.screenshot {
-  width: 300px;
-  margin: 5px;
-}
-
 .project-details {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  height: 600px;
   text-align: left;
   p {
     line-height: 175%;
@@ -38,9 +35,21 @@
   }
 }
 
+.project-links a {
+  color: $accent;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .project-images {
   width: 400px;
   margin-right: 5px;
+
+  img {
+    width: 300px;
+    margin: 5px;
+    border: 1px solid $light-gray;
+  }
 }
 
 .gh-link {
@@ -79,6 +88,7 @@
 }
 
 .staytuned {
+  text-align: center;
   display: block;
   margin-top: 50px;
   p {

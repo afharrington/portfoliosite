@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <!-- <link href="styles.css" rel="stylesheet"> -->
     <script src="https://use.fontawesome.com/332bc1d84f.js"></script>
   </head>
   <body>
+
     <section id="main" class="page">
       <div class="card-container slideDown">
         <div class="card-intro">
@@ -34,6 +35,7 @@
         </div>
       </div>
     </section>
+
     <section id="skills" class="page">
       <div class="page-heading">
         <nav class="page-nav">
@@ -95,6 +97,7 @@
         </div>
       </div>
     </section>
+
     <section id="about" class="page">
       <div class="page-heading">
         <nav class="page-nav">
@@ -124,6 +127,7 @@
         </div>
       </div>
     </section>
+
     <section id="projects" class="page">
       <div class="page-heading">
         <nav class="page-nav">
@@ -135,17 +139,19 @@
         </nav>
         <h1>Projects</h1>
       </div>
+
       <div class="projects-container">
-        <div class="project timetiles">
-          <h3 class="project-heading">TimeTiles</h3>
+
+        <article class="project timetiles">
+          <h3 class="project-heading">TimeTiles Web App</h3>
           <div class="project-details">
             <div class="project-images">
-              <img class="screenshot" src="/img/timetiles-1.png"/>
-              <img class="screenshot" src="/img/timetiles-2.png"/>
+              <img src="/img/timetiles-1.png"/>
+              <img src="/img/timetiles-2.png"/>
               <div class="project-links">
                 <p><a class="gh-link" href="https://timetiles.herokuapp.com" target="_blank">Try it</a></br>Email: test@email.com</br>Password: tiles</p>
-                <p><a class="gh-link" href="https://github.com/afharrington/tracker"><i class="fa fa-github" aria-hidden="true"></i></a>Front End</p>
-                <p><a class="gh-link" href="https://github.com/afharrington/trackerapi"><i class="fa fa-github" aria-hidden="true"></i></a>API</p>
+                <p><a class="gh-link" href="https://github.com/afharrington/tracker" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>Front End</p>
+                <p><a class="gh-link" href="https://github.com/afharrington/trackerapi" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>API</p>
               </div>
             </div>
             <div class="project-description">
@@ -160,14 +166,39 @@
                 <li>Server-side authenticaion with JSON Web Tokens (JWT), Passport, and bcrypt</li>
                 <li>Writing maintainable CSS with SCSS partials and component-based stylesheets</li>
               </ul>
-              <div class="staytuned">
-                <p>Stay tuned! I'll be adding more projects soon.</p>
-                <p>The code for this site can be found <a href="https://github.com/afharrington/portfoliosite" target="_blank">here</a>.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project lwportfolio">
+          <h3 class="project-heading">Design Portfolio Website</h3>
+          <div class="project-details">
+            <div class="project-images">
+              <img src="/img/lwportfolio-1.png"/>
+              <img src="/img/lwportfolio-2.png"/>
+              <div class="project-links">
+                <p><a class="gh-link" href="http://conceptsociety.com" target="_blank">Visit the site</a></p>
+                <p><a class="gh-link" href="https://github.com/afharrington/lwportfolio" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>View the code</p>
               </div>
+            </div>
+            <div class="project-description">
+              <h3 class="heading techstack">JavaScript, HTML, CSS</h3>
+              <p>Lauren is a design strategist who was seeking a simple, modern, and responsive site to showcase her work for those interested in contacting her for teaching and conference speaking engagements.</p>
+              <h3 class="heading learned">This project was an opportunity to develop skills in:</h3>
+              <ul>
+                <li>Collaborating with a client to develop a website to fit her needs and aesthetic</li>
+                <li>DOM manipulation with plain JavaScript (for filter functionality)</li>
+              </ul>
             </div>
           </div>
         </div>
+      </article>
+
+      <div class="staytuned">
+        <p>Stay tuned! I'll be adding more projects soon.</p>
+        <p>The code for this site can be found <a href="https://github.com/afharrington/portfoliosite" target="_blank">here</a>.</p>
       </div>
+
     </section>
     <script src="bundle.js"></script>
   </body>

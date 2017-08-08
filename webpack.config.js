@@ -16,21 +16,21 @@ module.exports = {
   },
   module: {
     loaders: [
-      // {
-      //   test: /\.scss$/,
-      //   loaders: ['style-loader', 'css-loader', 'sass-loader']
-      // },
+      {
+        test: /\.scss$/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
+      },
       {
         test: /\.js$/,
         loaders: ['babel-loader']
       },
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader!sass-loader"
-        })
-      }
+      // {
+      //   test: /\.scss$/,
+      //   loader: ExtractTextPlugin.extract({
+      //     fallback: "style-loader",
+      //     use: "css-loader!sass-loader"
+      //   })
+      // }
     ]
   },
   plugins: [
