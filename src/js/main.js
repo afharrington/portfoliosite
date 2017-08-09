@@ -1,16 +1,6 @@
 import '../stylesheets/main.scss';
 import './jquery.inview.min.js';
 
-$('.page-link').click(function(e){
-  e.preventDefault();
-  let go = this.getAttribute('href');
-  $('.card-container').removeClass('slideDown').addClass('slideUp');
-  setTimeout(function(){
-    window.location = go;
-    $('.card-container').removeClass('slideUp');
-  }, 500);
-});
-
 $('.nav-arrow').click(function(e){
   let go = this.getAttribute('href');
   $('.card-container').addClass('slideDown');
@@ -28,3 +18,43 @@ $("#about").bind("inview", function(isVisible) {
     });
   }
 });
+
+// Top navigation becomes visible when scrolling past landing page
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 700) {
+    $('.top-nav').fadeIn();
+  } else {
+    $('.top-nav').fadeOut(100);
+  }
+});
+
+
+$('nav a').on('click', function() {
+    var scrollAnchor = $(this).attr('data-scroll'),
+        scrollPoint = $('section[data-anchor="' + scrollAnchor + '"]').offset().top - 60;
+    $('body,html').animate({
+        scrollTop: scrollPoint
+    }, 500);
+    return false;
+})
+
+
+$(window).scroll(function() {
+  var windscroll = $(window).scrollTop();
+  if (windscroll >= 100) {
+    $('nav').addClass('fixed');
+    $('section').each(function(i) {
+      if ($(this).position().top <= windscroll - 20) {
+        // $('nav a.active').removeClass('active');
+        // $('nav a').eq(i).addClass('active');
+      }
+    });
+
+    } else {
+      $('nav').removeClass('fixed');
+      // $('nav a.active').removeClass('active');
+      // $('nav a:first').addClass('active');
+    }
+
+}).scroll();

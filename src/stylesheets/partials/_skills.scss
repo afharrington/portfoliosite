@@ -12,29 +12,43 @@
 .box {
   border: 2px solid $accent;
   color: $text-dark;
-  min-width: 350px;
-  height: 235px;
+  width: 310px;
   margin: 15px;
   h3 {
     font-size: 22px;
     color: $accent;
   }
-  ul {
-    text-align: left;
-  }
-  .list-left {
+
+  .tech-items {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: -12px;
-    width: 50%;
-    float: left;
+    padding: 10px;
+    justify-content: center;
   }
-  .list-right {
-    margin-top: -13px;
-    width: 50%;
-    float: right;
-    padding-left: 0px;
+
+  .tech-item {
+    width: 60px;
+    margin: 10px;
+
+    img {
+      width: 25px;
+      height: 25px;
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
   }
-  li {
-    margin-bottom: 10px;
-    font-size: 18px;
+
+  .care-item {
+    width: 100%;
+    p {
+      margin: 5px;
+    }
   }
 }
